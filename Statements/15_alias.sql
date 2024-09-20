@@ -2,3 +2,6 @@ SELECT name, init_date AS 'initial date of programming' FROM users WHERE age BET
 
 
 SELECT name, init_date AS 'initial date of programming' FROM users WHERE name = 'brais'
+
+
+SELECT CONCAT('NAME: ',name, ' ' ,surname) AS 'full_name' FROM users;
