@@ -6,3 +6,14 @@ CREATE TABLE dni(
     );
 
 
+CREATE TABLE documents (
+    document_id int AUTO_INCREMENT PRIMARY KEY UNIQUE,
+    document_type VARCHAR(50) NOT NULL,
+    document_number VARCHAR(100) NOT NULL,
+    issue_date DATE,
+    expiry_date DATE,
+    dni_id int,
+    FOREIGN KEY (dni_id) REFERENCES dni(dni_id)
+);
+
+
